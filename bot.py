@@ -24,4 +24,4 @@ async def on_message(message):
             embed.set_footer(text="test",icon_url= "https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
             await client.send_message(message.channel, embed=embed)
 
-client.run("NTI1MzQ0MTIwOTQ0NzIxOTQx.Dv1QYw.R2nrffHaqDE-v_Wj2ZpaoB72hhQ")
+client.run(os.environ["BOT_TOKEN"])

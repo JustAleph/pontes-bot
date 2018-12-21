@@ -53,4 +53,11 @@ async def on_message(message):
             sent = await client.send_message(message.author, embed=embed)
             await client.delete_message(message)
 
+@client.event
+async def on_message(message):
+    if message.content == "pon!help":
+        sent = await client.send_message(message.channel, "Ik heb je een DM gestuurd!")
+        await asyncio.sleep(6)
+        await client.delete_message(sent)
+
 client.run(os.environ["BOT_TOKEN"])

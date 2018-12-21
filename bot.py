@@ -35,4 +35,12 @@ async def on_message(message):
               embed.set_footer(text="Pontes bot © 2018 | gemaakt door @JustAleph0001",icon_url= "https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
               await client.send_message(message.channel, embed=embed)
 
+        elif message.content.startswith('pon!H3RB'):
+            embed=discord.Embed(title="Klik hier voor het rooster van H3RB", url="https://cdn.discordapp.com/attachments/524321408587661334/525685520043343882/Schermafbeelding_2018-12-21_om_15.05.00.png", color=0x3498db)
+            embed.set_author(name="Pontes bot", icon_url="https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
+            embed.add_field(name="pon!klassen", value="krijg een lijst van alle klassen", inline=False)
+            embed.add_field(name="pon!help", value="krijg meer informatie over deze bot", inline=False)
+            embed.set_footer(text="Pontes bot © 2018 | gemaakt door @JustAleph0001",icon_url= "https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
+            await client.send_message(message.channel, embed=embed)
+
 client.run(os.environ["BOT_TOKEN"])

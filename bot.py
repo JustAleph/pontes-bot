@@ -31,7 +31,6 @@ async def on_message(message):
             embed.add_field(name="pon![je klas]", value="om het rooster van je klas te krijgen (als ik het heb).", inline=False)
             embed.add_field(name="pon!help", value="toon dit bericht!", inline=False)
             embed.set_footer(text="Pontes bot © 2018 | gemaakt door @JustAleph0001",icon_url= "https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
-            await client.send_message(message.channel, embed=embed)
             sent = await client.send_message(message.channel, embed=embed)
             await asyncio.sleep(3) 
             await client.delete_message(sent)

@@ -30,7 +30,7 @@ async def on_message(message):
         elif message.content.startswith('pon!klassen'):
               embed=discord.Embed(title="dit is de lijst met klassen waar ik het rooster van heb!", url="", color=0x3498db)
               embed.set_author(name="Pontes bot", icon_url="https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
-              embed.add_field(name="H3RB", value="test", url="https://google.com", inline=False)
+              embed.add_field(name="H3RB", value="test", inline=False)
               embed.set_footer(text="Pontes bot © 2018 | all rights reserved",icon_url= "https://cdn.discordapp.com/avatars/231703783988527104/7012bfe50b480374b601dae2576a521c.png?size=128")
               await client.send_message(message.channel, embed=embed)
 

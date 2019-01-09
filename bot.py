@@ -15,7 +15,7 @@ bypass_list = []
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.Game(name='Pontes'))
+    await client.change_presence(game=discord.Game(name="Currently active on " + str(len(client.servers)) + " servers."))
 
     print('Logged in as')
     print(client.user.name)

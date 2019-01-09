@@ -17,7 +17,7 @@ bypass_list = []
 async def on_ready():
     await client.change_presence(game=discord.Game(name="Nu actief in " + str(len(client.servers)) + " servers."))
     await asyncio.sleep(20)
-    await client.change_presence(game=discord.Game(name="Type pon!help voor meer informaite!"))
+    await client.change_presence(game=discord.Game(name="pon!help"))
 
     print('Logged in as')
     print(client.user.name)
